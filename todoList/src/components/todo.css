@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IE+Guides&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  text-transform: capitalize;
+}
+
+/* todo.css */
+
+.todo_container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: #f9f3f3;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+.dateTime {
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin: 0.8rem 0px;
+}
+
+/* Form Container */
+.form form {
+  display: flex;
+  gap: 0;
+  flex-wrap: nowrap; /* Allows stacking on small screens */
+}
+
+/* Input Styling */
+.todo_input {
+  flex: 1;
+  padding: 12px 16px;
+  border-top: 4px solid #3d365c;
+  border-bottom: 4px solid #3d365c;
+  border-left: 4px solid #3d365c;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #3b3b3b;
+}
+
+.todo_input:focus {
+  border-color: #6c63ff;
+}
+
+/* Button Styling */
+.todo_btn {
+  padding: 12px 20px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  margin-left: -2px;
+}
+
+.todo_btn:hover {
+  background-color: #5548c8;
+}
+
+.myTask ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.myTask li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.myTask li:hover {
+  transform: scale(1.02);
+}
+
+.myTask span {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.check_btn,
+.Delete_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 6px;
+  margin-left: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  color: black;
+}
+
+.check_btn:hover {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.Delete_btn:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-enter {
+  animation: fadeSlideIn 0.3s ease-out;
+}
+.deleteAllBtn_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Del_all_btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Del_all_btn:hover {
+  background-color: #e60000;
+}
+.fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.checkList{
+  text-decoration: line-through;
+}
+.notCheckList{
+  text-decoration: none;
+}
