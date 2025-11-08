@@ -1,0 +1,55 @@
+/* Basic container styling */
+.toggle_switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f4f6; /* light background */
+}
+
+/* Switch background */
+.switch {
+  width:600px;
+  height: 200px;
+  background-color: #d1d5db;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circle + Text */
+.switch_state {
+  position: absolute;
+  
+  left: 10px;
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  color: orange;
+  
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.switch.on .switch_state{
+ transform: translateX(400px);
+background-color: greenyellow;
+color: white;
+
+}
+.switch.off .switch_state {
+  transform: translateX(0px );
+  background-color: rgb(244, 169, 64);
+  color: white;
+}
