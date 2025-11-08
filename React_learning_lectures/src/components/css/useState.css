@@ -1,0 +1,42 @@
+/* useState.css
+
+.container {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin-bottom: 50px;
+  color: #000000;
+  font-weight: 500;
+  transition: all 1s;
+}
+
+h1:nth-of-type(2) {
+  font-size: 24px;
+  color: #7a9e9f;
+}
+
+button {
+  background-color: #a2d5c6;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(162, 213, 198, 0.4);
+}
+
+button:hover {
+  background-color: #88c4b2;
+  box-shadow: 0 6px 16px rgba(162, 213, 198, 0.5);
+  transform: translateY(-2px);
+} */

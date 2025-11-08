@@ -1,0 +1,103 @@
+/* ChallengeUseState.css */
+
+.container {
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title Centered */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Left aligned section */
+h3,
+label {
+  text-align: left;
+  margin-left: 10px;
+  color: #6a8eae;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Input styling */
+input[type="number"] {
+  width: 100px;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #b2dfdb;
+}
+
+/* Buttons inline */
+button {
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+/* Button container for inline layout */
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Button styles */
+.inc_btn {
+  background-color: #a2d5c6;
+  color: white;
+}
+
+.inc_btn:hover {
+  background-color: #88c4b2;
+}
+
+.dec_btn {
+  background-color: #f7a8a8;
+  color: white;
+}
+
+.dec_btn:hover {
+  background-color: #f27272;
+}
+
+.reset_btn {
+  background-color: #c9c6ec;
+  color: white;
+}
+
+.reset_btn:hover {
+  background-color: #9e9ad9;
+}
