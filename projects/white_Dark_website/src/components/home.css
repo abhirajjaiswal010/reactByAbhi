@@ -1,0 +1,55 @@
+/* home.css */
+
+body {
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Light mode styles */
+body.light {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button styling */
+button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Light button */
+body.light button {
+  background-color: #e0e0e0;
+  color: #121212;
+}
+
+/* Dark button */
+body.dark button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #555555;
+}

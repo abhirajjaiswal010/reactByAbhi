@@ -1,0 +1,155 @@
+* {
+  color: black;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input[type="text"] {
+  padding: 0.6rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  width: 50%;
+  max-width: 300px;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+input[type="text"]:focus {
+  border-color: #ffdc5e;
+  background-color: #fff;
+}
+.card_container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 8px;
+  column-gap: 40px;
+}
+
+.card {
+  width: 300px;
+
+  padding: 5px;
+  background: #fdfefc;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+
+  position: relative;
+  overflow: hidden;
+  transition: border 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Wrapper for the image */
+.image_container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smooth blob background shape */
+.image_container::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -2px;
+  width: 100%;
+  height: 110px;
+  background-color: #fff3b0;
+  border-radius: 61% 39% 46% 54% / 82% 61% 39% 18%;
+  z-index: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover blob morphing with glow effect */
+.card:hover .image_container::before {
+  top: -15px;
+  left: -6px;
+  width: 105%;
+  height: 110px;
+  background-color: #fff3b0;
+  border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+
+  transition: all 0.5s ease-in-out;
+}
+
+/* Image styling with smooth scale */
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s ease,filter  0.5s ease;
+  filter: grayscale(1);
+}
+
+/* On hover, scale image gently */
+.card:hover img {
+  transform: scale(1.15);
+  filter: grayscale(0);
+}
+
+/* Text styling */
+
+
+/* Border hover effect */
+.card:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #000000;
+  text-transform:capitalize;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+.ability {
+  background-color: #c1fba4;
+  padding: 4px 12px;
+  border-radius: 20px;
+  word-spacing: 4px;
+  text-transform: capitalize;
+ 
+}
+
+.spec {
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+}
+
+.spec_title {
+  text-transform: capitalize;
+  margin-top: 10px;
+font-weight: 500;
+  color: #000000;
+  font-size: 16px;
+}
+
+.spec_value {
+  font-size: 15px;
+  color: #363636;
+  text-transform: capitalize;
+}
