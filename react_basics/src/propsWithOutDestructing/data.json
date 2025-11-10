@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Abhi", "age": 20, "role": "Developer", "isOnline": true },
+  { "id": 2, "name": "Riya", "age": 21, "role": "Designer", "isOnline": false },
+  { "id": 3, "name": "Sam", "age": 19, "role": "Tester", "isOnline": true }
+]
