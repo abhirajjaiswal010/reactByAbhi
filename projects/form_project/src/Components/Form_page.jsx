@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./form.css";
+// import "./form.css";
 
 export const Form_page = () => {
   const [first_Name, setFirstName] = useState("");

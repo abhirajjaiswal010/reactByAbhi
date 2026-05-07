@@ -1,5 +1,6 @@
 import { State01, State02 } from "./06_states";
 import UserList from "./07_statesChallenege";
+import { DerivedCart } from "./08_deerivedState.jsx";
 
 const App=()=>
 {
@@ -8,6 +9,7 @@ const App=()=>
         <State01/>
         <State02/>
         <UserList/>
+        <DerivedCart/>
         </>
     )
 }
